@@ -1,0 +1,269 @@
+/* SIGN IN/UP FORMS */
+
+.sign-in 
+{
+  /* display: none; */
+  width: 300px;
+  height: 35%;
+  background-color: rgb(255, 255, 255);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  border: 1px solid #00cec9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.sign-in-image {
+  background:  url(images/sign-in.jpg);
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+.sign-up-image {
+  background:  url(images/sign-up.jpg);
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+.form-field {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.form-group input {
+  width: 75%;
+  height: 1.6rem;
+  border: 1px solid #00cec9;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  padding-left: 8px;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-field h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.sign-in-button,
+.sign-up-button {
+  width: 125px;
+  height: 1.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #00cec9;
+  border-radius: 50px;
+  background-color: #00cecb75;
+  color: black;
+  cursor: pointer;
+}
+
+.sign-in-button:hover,
+.sign-up-button:hover {
+  background-color: #00cec9;
+}
+
+.forgot-password a {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.not-a-member 
+{
+  /* display: none; */
+  left: 50%;
+  top: 70%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.member-sign-up,
+.new-member {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+    <!-- <-- SIGN IN -->
+    <form class="sign-in" action="#" method="post">
+      <div class="sign-in-image"></div>
+      <div class="form-field">
+        <h2>SIGN IN</h2>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Your email">
+        </div>
+        <div class="form-group">
+          <input  id="password" class="form-control" type="password" name="password" placeholder="Password">
+        </div>
+        <button class="sign-in-button">SIGN IN</button>
+        <div class="forgot-password">
+          <a href="#" >Forgot Password?</a>
+        </div>
+      </div>
+    </form>
+
+    <div class="not-a-member">
+      <div class="member-sign-up">
+        <h2 class="sign-up">Not a member?</h2>
+      </div>
+      <div class="new-member">
+        <a class="sign-up" href="#">Sign Up <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+
+
+/* SIGN IN/UP FORMS */
+
+.sign-up 
+{
+  /* display: none; */
+  width: 300px;
+  height: 45%;
+  background-color: rgb(255, 255, 255);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  border: 1px solid #00cec9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+/* .sign-in-image {
+  background:  url(images/sign-in.jpg);
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+} */
+
+.sign-up-image {
+  background:  url(images/sign-up.jpg);
+  height: 40%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+.form-field {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.form-group input {
+  width: 75%;
+  height: 2.0rem;
+  border: 1px solid #00cec9;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  padding-left: 8px;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+.form-field h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.sign-in-button,
+.sign-up-button {
+  width: 125px;
+  height: 2.0rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #00cec9;
+  border-radius: 50px;
+  background-color: #00cecb75;
+  color: black;
+  cursor: pointer;
+}
+
+.sign-in-button:hover,
+.sign-up-button:hover {
+  background-color: #00cec9;
+}
+
+.forgot-password a {
+  color: black;
+  font-size: 0.9rem;
+}
+
+.already-a-member {
+  left: 50%;
+  top: 75%;
+  width: 300px;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  color: white;
+  font-size: 1.2rem;
+}
+
+
+.member-sign-in {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+    <!-- SIGN UP -->
+    <form class="sign-up" action="#" method="post">
+      <div class="sign-up-image"></div>
+      <div class="form-field">
+        <h2>SIGN UP</h2>
+        <div class="form-group">
+          <input type="name" name="first-name" class="form-control" id="first-name" placeholder="Your first name">
+        </div>
+        <div class="form-group">
+          <input type="name" name="last-name" class="form-control" id="last-name" placeholder="Your last name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Your email">
+        </div>
+        <div class="form-group">
+          <input  id="password" class="form-control" type="password" name="password" placeholder="Password">
+        </div>
+        <button class="sign-up-button">SIGN IN</button>
+        <div class="forgot-password">
+          <a href="#" >Forgot Password?</a>
+        </div>
+      </div>
+    </form>
+
+    <div class="already-a-member">
+      <div class="member-sign-in">
+        <a href="#">Already a member? <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>

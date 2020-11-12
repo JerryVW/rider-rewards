@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  
+  font-family: 'Roboto Slab', serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.landing-page {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(images/Main_background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  background-attachment: fixed;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+/* HEADER AND NAV-BAR */
+
+.container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.logo-container {
+  width: 30%;
+}
+
+.logo {
+  width: 90%;
+  height: 55px;
+  margin: 28px auto 0;
+}
+
+.search-bar-container {
+  width: 30%;
+  margin-top: 28px;
+}
+
+.search-container {
+  width: 100%;
+  height: 48px;
+  display: inline;
+  border: 2px solid#00cec9;
+  border-radius: 50px;
+  padding: 8px 0 8px 8px;
+}
+
+.search-box {
+  width: 84%;
+  height: 80%;
+  background: transparent;
+  border: none;
+  color: white;
+  padding-top: 4px;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.search-container ::placeholder {
+  color:white;
+  opacity: 1; /* Firefox */
+  font-size: 1.2rem;
+}
+
+.gear-search {
+  width: 10%;
+  height: 80%;
+  background: transparent;
+  border: none;
+  color: #00cec9;
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding-top: 2px;
+}
+
+.gear-search:focus {
+  outline: none;
+}
+
+.member-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.account,
+.wish-list,
+.shopping-cart {
+  width: 33.3333%;
+  margin-top: 40px;
+}
+
+.cart-count {
+  margin-right: 24px;
+  float: right;
+  width: 25px;
+  height: 23px;
+  background-color: red;
+  border-radius: 4px;
+  color: white;
+}
+
+.heart-beat,
+.user-circle {
+  color: red;
+}
+
+.member-essentials {
+  color: white;
+  font-size: 1.4rem;
+
+}
+
+
+/* NAVIGATION BAR */
+
+.nav-container {
+  width: 1200px;
+  margin: 20px auto 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.0rem;
+  transition: all 0.4s ease;
+}
+
+a:hover,
+a:focus {
+  color: #00cec9;
+}
+
+hr {
+  margin-top: 22px;
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.15));
+}
+/* BUSINESS SECTION */
+
+.what-it-do {
+  left: 50%;
+  top: 18%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  color: white;
+}
+
+.what-it-do h1 {
+  font-style: italic;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.what-it-do p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 12px;
+
+}
+
+.price-plan-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-direction: row;
+  left: 50%;
+  top: 58%;
+  position: absolute;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  -moz-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.prices {
+  width: 300px;
+  height: 450px;
+  border: 1px solid white;
+  border-bottom: none;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.amateur h2,
+.rookie h2,
+.goat h2 {
+  font-size: 2.5rem;
+}
+
+.prices-container {
+  transition: all 0.3s ease;
+}
+
+.prices-container:hover,
+.prices-container:focus {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.prices-container:nth-child(2) {
+  margin-top: 120px;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.over-sized {
+  font-size: 2rem;
+}
+
+.sign-up-button {
+  width: 300px;
+  height: 100px;
+  padding: 30px 0;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 68%, 50% 100%, 0% 68%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 68%, 50% 100%, 0% 68%);
+  background-color: #00cecba8;
+  text-align: center;
+  margin-top: -66px;
+  transition: all 0.4s ease;
+}
+
+.sign-up-button a {
+  font-size: 1.5rem;
+}
+
+.sign-up-button:hover,
+.sign-up-button:focus {
+  background-color: #00cecbce;
+}
+
+.sign-up-button a:hover,
+.sign-up-button a:focus {
+  color: white;
+}

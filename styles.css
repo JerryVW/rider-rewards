@@ -100,11 +100,11 @@ html {
 
 .search-box {
   width: 84%;
-  height: 80%;
   background: transparent;
   border: none;
   color: white;
   padding-top: 4px;
+  font-size: 1.4rem;
 }
 
 .search-box:focus {
@@ -319,6 +319,11 @@ p {
 
 .brands-phrase {
   font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+
+.brands-phrase2 {
+  font-size: 2rem;
   margin-bottom: 35px;
 }
 
